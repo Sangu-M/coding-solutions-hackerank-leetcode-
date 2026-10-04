@@ -1,5 +1,8 @@
 if __name__ == '__main__':
-    a = int(input())
-    b = int(input())
-    print(a//b)
-    print(a/b)
+    n = int(input())
+    arr = map(int, input().split())
+    s =  set(arr)
+    arr1 = list(s)
+    arr1.sort()
+    print(arr1[-2])
+        
