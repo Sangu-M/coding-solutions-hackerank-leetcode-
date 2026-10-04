@@ -1,4 +1,4 @@
-# Python: Division
+# Find the Runner-Up Score!
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -31,14 +31,17 @@ Print the runner-up score.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-04T16:02:46.365Z  
+**Submitted:** 2026-10-04T16:31:15.726Z  
 
 ```py
 if __name__ == '__main__':
-    a = int(input())
-    b = int(input())
-    print(a//b)
-    print(a/b)
+    n = int(input())
+    arr = map(int, input().split())
+    s =  set(arr)
+    arr1 = list(s)
+    arr1.sort()
+    print(arr1[-2])
+        
 
 ```
 
