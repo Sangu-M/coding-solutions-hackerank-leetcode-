@@ -1,20 +1,22 @@
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-
-
 if __name__ == '__main__':
-    n = int(input().strip())
-if(n%2!=0):
-    print("Weird")
-elif(n>=2 and n<=5):
-    print("Not Weird")
-elif(n>=6 and n<=20):
-    print("Weird")
-else:
-    print("Not Weird")
+    N = int(input())
+    arr = []
+    for i in range(N):
+        parts=input().split()
+        cmd=parts[0]
+        
+        if cmd=="insert":
+            arr.insert(int(parts[1]),int(parts[2]))
+        elif cmd=="print":
+            print(arr)
+        elif cmd=="remove":
+            arr.remove(int(parts[1]))
+        elif cmd=="append":
+            arr.append(int(parts[1]))
+        elif cmd=="sort":
+            arr.sort()
+        elif cmd=="pop":
+            arr.pop()
+        elif cmd=="reverse":
+            arr.reverse()
+                
